@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: #fff; */
+    font-family: 'segoe UI', sans-serif;
+}
+.logo img{
+    width:164px;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "segoe UI";
+    margin: 23px 0;
+    gap: 70px;
+}
+.right ul{
+    display: flex;
+    gap: 34px;
+}
+.right ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /* transition: all 1s; */
+}
+.right ul li span{
+    padding: 0px 5px;
+    transition: all 1s;
+}
+.first{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    margin: 70px;
+    font-family: sans-serif;
+}
+.first span{
+    font-size: 40px;
+}
+section span img{
+    width: 83px;
+    margin: 0 23px;
+}
+.first p{
+    font-size: 23px;
+    width: 72vw;
+    text-align: center;
+}
+
+.first button{
+    background-color: #37bcf3;
+    border: 2px solid;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    padding: 14px 12px;
+    cursor: pointer;
+}
+
+.small{
+    font-size: 12px;
+}
+.second{
+    max-width: 50vw;
+    margin: auto;
+}
+.btn{
+    /* display: inline-block; */
+    background-color: #37bcf3;
+    padding: 14px 12px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    margin: 12px 0;
+    cursor: pointer;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+.green{
+    background-color: rgb(77, 207, 77);
+}
+.item{
+    padding: 21px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.item-lang{
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 36px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+}
+.download:nth-child(2){
+    font-size: 23px;
+}
+.download img{
+    width: 65px;
+    padding: 0 12px;
+}
+.download{
+    display: flex;
+    font-family: sans-serif;
+    gap: 10px;
+    align-items: center;
+}
+.checkBtn {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.checkBtn {
+    cursor: pointer;
+    font-size: 30px;
+    float: right;
+    color: #0b0a0a;
+    line-height: 80px;
+}
+
+
+
+@media screen and (max-width:855px) {
+    .list {
+        width: 30%;
+        height: 70vh;
+        background-color: rgb(247, 245, 250);
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        text-align: center;
+        top: 5rem;
+        left: 100%;
+        align-items: center;
+    }
+    li{
+        margin-top: 25px;
+    }
+
+    #check {
+        display: none;
+    }
+
+    .checkBtn {
+        display: block;
+    }
+
+    #check:checked~ul {
+        left: 60%;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+    }
+}
