@@ -1,1 +1,1 @@
-https://vidhyanandreddy.github.io/Responsive/
+https://vidhyanandreddy.github.io/Grid-Responsive/
